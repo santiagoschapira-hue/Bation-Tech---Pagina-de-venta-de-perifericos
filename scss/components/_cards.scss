@@ -1,8 +1,12 @@
 @use "../utilities/mixins" as m;
 @use "../utilities/variables" as v;
 
-.tarjeta-categoria {
+%texto-centrado {
     text-align: center;
+}
+
+.tarjeta-categoria {
+    @extend %texto-centrado;
     width: 40vw;
 }
 
