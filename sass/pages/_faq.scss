@@ -1,0 +1,44 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+
+.FAQ-img {
+    height: 35vh;
+    width: auto;
+}
+
+.accordion-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.accordion {
+    margin-bottom: 30px;
+}
+
+.accordion-button {
+    background-color: v.$color-bronce;
+    color: v.$color-acento;
+}
+
+.accordion-header {
+    margin-top: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: v.$color-bronce;
+    color: v.$color-acento;
+}
+
+@include m.mobile {
+    .FAQ-img {
+        width: 70vw;
+        height: auto;
+    }
+}
+
+@include m.tablet {
+    .FAQ-img {
+        width: 60vw;
+        height: auto;
+    }
+}

@@ -1,0 +1,45 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+
+footer {
+    background-color: v.$color-bronce;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+footer nav ul li {
+    list-style: none;
+}
+
+.copyright p {
+    font-size: 1rem;
+}
+
+.RRSS-img {
+    height: 4vh;
+    width: 2vw;
+}
+
+.footer-nav .nav-ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+@include m.mobile {
+    .RRSS-img {
+        width: 5.5vw;
+        height: auto;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+
+@include m.tablet {
+    .RRSS-img {
+        width: 6vw;
+        height: auto;
+    }
+}

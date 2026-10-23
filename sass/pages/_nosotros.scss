@@ -1,0 +1,51 @@
+@use "../utilities/mixins" as m;
+
+/* Sobre Nosotros */
+.sobreNos-img {
+    grid-area: imagen;
+    width: 50vw;
+    height: auto;
+}
+
+.texto-nosotros {
+    grid-area: texto;
+}
+
+.bloque-nosotros {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-areas: "imagen texto";
+    gap: 20px;
+    align-items: center;
+    margin: 30px 20px;
+}
+
+@include m.mobile {
+    .bloque-nosotros {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "imagen"
+            "texto";
+        gap: 15px;
+        margin: 20px 12px;
+    }
+
+    .sobreNos-img {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+@include m.tablet {
+    .bloque-nosotros {
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-areas: "imagen texto";
+        gap: 15px;
+        margin: 20px 12px;
+    }
+
+    .sobreNos-img {
+        width: 40vw;
+        height: auto;
+    }
+}

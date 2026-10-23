@@ -1,0 +1,11 @@
+@use "../utilities/variables" as v;
+
+header {
+    background-color: v.$color-bronce;
+    padding: 0 20px;
+}
+
+.logo-pagina {
+    height: 10vh;
+    width: auto;
+}

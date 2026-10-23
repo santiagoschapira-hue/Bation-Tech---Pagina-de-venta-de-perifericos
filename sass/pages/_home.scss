@@ -1,0 +1,99 @@
+@use "../utilities/mixins" as m;
+
+.presentacion {
+    margin-bottom: 30px;
+}
+
+.presentacion-img {
+    height: 60vh;
+    width: 50vw;
+    margin-left: 20px;
+}
+
+.presentacion-portada {
+    text-align: center;
+}
+
+.carousel-categorias {
+    --bs-carousel-control-icon-width: 1.5rem;
+    margin: 40px 20px 30px;
+}
+
+.carousel-categorias .tarjeta-categoria {
+    width: 30vw;
+    margin: 0 auto;
+}
+
+.destacados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.equipamiento-img {
+    height: 30vh;
+    width: auto;
+}
+
+.destacados-img {
+    height: 42vh;
+    width: auto;
+}
+
+@include m.mobile {
+    .bloque-categoria {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .destacados {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .equipamiento-img,
+    .destacados-img {
+        width: 70vw;
+        height: auto;
+    }
+
+    .presentacion-img {
+        width: 85vw;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+@include m.tablet {
+    .bloque-categoria {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .destacados {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .equipamiento-img {
+        width: 30vw;
+        height: auto;
+    }
+
+    .destacados-img {
+        width: 35vw;
+        height: auto;
+    }
+
+    .presentacion-img {
+        width: 60vw;
+        height: auto;
+        margin-left: 0;
+    }
+}

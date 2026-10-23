@@ -1,0 +1,33 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+
+.contacto-img {
+    height: 50vh;
+    width: auto;
+}
+
+.num-contacto {
+    color: v.$color-bronce;
+}
+
+label {
+    color: whitesmoke;
+}
+
+form {
+    margin-bottom: 40px;
+}
+
+@include m.mobile {
+    .contacto-img {
+        width: 70vw;
+        height: auto;
+    }
+}
+
+@include m.tablet {
+    .contacto-img {
+        width: 60vw;
+        height: auto;
+    }
+}

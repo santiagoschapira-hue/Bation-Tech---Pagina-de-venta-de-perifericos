@@ -1,0 +1,72 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+
+.nav-link {
+    text-decoration: none;
+    font-size: 0.8rem;
+    background-color: v.$color-acento;
+    border-radius: 5px;
+}
+
+.navbar-bastion .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-bastion .navbar-nav {
+    gap: 15px;
+}
+
+.nav-link:link {
+    color: v.$color-bronce;
+}
+
+.nav-link:visited {
+    color: v.$color-texto;
+}
+
+.nav-link:hover {
+    color: v.$color-acento;
+    background-color: v.$color-bronce;
+}
+
+/* flecha hacia arriba */
+.flechaArriba-img {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    height: 80px;
+    width: auto;
+}
+
+/* menu acompañante */
+.menu-sticky {
+    position: sticky;
+    top: 0;
+}
+
+@include m.mobile {
+    header.menu-sticky {
+        gap: 10px;
+    }
+
+    .nav-ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .flechaArriba-img {
+        height: 45px;
+        width: auto;
+        bottom: 12px;
+        right: 5px;
+    }
+}
+
+@include m.tablet {
+    .nav-ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}

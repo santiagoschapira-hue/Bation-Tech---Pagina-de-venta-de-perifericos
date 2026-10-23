@@ -1,0 +1,44 @@
+@use "../utilities/mixins" as m;
+
+.presentacion-catalogo{
+    margin-bottom: 50px;
+}
+.catalogo-img{
+    height: 30vh;
+    width: auto;
+}
+
+
+.bloque-catalogo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    align-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+@include m.mobile {
+    .bloque-catalogo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .catalogo-img {
+        width: 70vw;
+        height: auto;
+    }
+}
+
+@include m.tablet {
+    .bloque-catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .catalogo-img {
+        width: 35vw;
+        height: auto;
+    }
+}
