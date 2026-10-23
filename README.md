@@ -26,9 +26,7 @@ El proyecto está organizado con el archivo index.html en la raíz, las otras cu
 
 Los estilos están separados en archivos parciales para mantener el código organizado y facilitar su modificación.
 
- Sitio web
-
-El proyecto se publicará en Vercel y el enlace se agregará acá cuando esté disponible.
+ **Sitio publicado:** https://bastiontech-ecommerce.vercel.app/
 
  Autor
 
