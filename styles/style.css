@@ -148,6 +148,7 @@ header {
 .nav-link:hover {
   color: #4C230A;
   background-color: #B99555;
+  transform: scale(1.05);
 }
 
 /* flecha hacia arriba */
@@ -163,6 +164,7 @@ header {
 .menu-sticky {
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 @media (max-width: 500px) {
@@ -229,13 +231,8 @@ footer nav ul li {
   }
 }
 .tarjeta-categoria {
-  border: 2px solid transparent;
   text-align: center;
   width: 40vw;
-}
-
-.tarjeta-categoria:hover {
-  border-color: #B99555;
 }
 
 .tarjeta-producto {
@@ -328,6 +325,11 @@ footer nav ul li {
 .equipamiento-img {
   height: 30vh;
   width: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+.equipamiento-img:hover {
+  transform: scale(1.05);
 }
 
 .destacados-img {
@@ -529,6 +531,20 @@ form {
     width: 40vw;
     height: auto;
   }
+}
+@keyframes aparecer-logo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.logo-pagina {
+  animation-name: aparecer-logo;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
 }
 
 /*# sourceMappingURL=style.css.map */

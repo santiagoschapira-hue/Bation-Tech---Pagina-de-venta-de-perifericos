@@ -2,13 +2,8 @@
 @use "../utilities/variables" as v;
 
 .tarjeta-categoria {
-    border: 2px solid transparent;
     text-align: center;
     width: 40vw;
-}
-
-.tarjeta-categoria:hover {
-    border-color: v.$color-bronce;
 }
 
 .tarjeta-producto {

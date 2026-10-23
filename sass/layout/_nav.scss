@@ -27,6 +27,7 @@
 .nav-link:hover {
     color: v.$color-acento;
     background-color: v.$color-bronce;
+    transform: scale(1.05);
 }
 
 /* flecha hacia arriba */
@@ -42,6 +43,7 @@
 .menu-sticky {
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 @include m.mobile {
