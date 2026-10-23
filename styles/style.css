@@ -1,0 +1,474 @@
+/* font family: Besley y Black Ops One*/
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Black+Ops+One&family=Manufacturing+Consent&display=swap');
+/*  font-family: "Besley", serif;
+font-family: "Black Ops One", system-ui;
+font-family: "Manufacturing Consent", system-ui;*/
+/* reset de css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #280004;
+    font-family: "Besley", serif;
+}
+/* Parrafos y titulos */
+h1,h2,h3{
+    font-family: "Black Ops One", system-ui;
+}
+h1{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+h3{
+    font-size: 1.2rem;
+    font-weight: 50;
+}
+.prod-nombre{
+    color: #280004;
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.precio{
+    color:#A53F2B;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.texto-izquierda{
+    color:#CCC9A1;
+    text-align: start;
+    margin-left: 20px;
+}
+.texto-centrado{
+    color:#CCC9A1;
+    text-align: center;
+}
+.precioViejo{
+    text-decoration:line-through;
+}
+/* HEADER */
+header{
+    background-color:#B99555;
+    padding: 0 20px;
+}
+.logo-pagina{
+    height: 10vh;
+    width: auto;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 0.8rem;
+    background-color: #4C230A;
+    border-radius: 5px;
+}
+.navbar-bastion .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-bastion .navbar-nav {
+    gap: 15px;
+}
+.nav-link:link {
+    color: #B99555;
+}
+.nav-link:visited {
+    color: #CCC9A1;
+}
+.nav-link:hover {
+    color: #4C230A;
+    background-color: #B99555;
+}
+/* MAIN */
+/* Inicio */
+.presentacion{
+    margin-bottom: 30px;
+}
+.presentacion-img{
+    height: 60vh;
+    width: 50vw;
+    margin-left: 20px;
+    
+}
+.presentacion-portada{
+    text-align: center;
+}
+.carousel-categorias {
+    --bs-carousel-control-icon-width: 1.5rem;
+    margin: 40px 20px 30px;
+}
+
+.carousel-categorias .tarjeta-categoria {
+    width: 30vw;
+    margin: 0 auto;
+
+}
+.tarjeta-categoria{
+    border: 2px solid transparent;
+    text-align: center;
+    width: 40vw;
+}
+.tarjeta-categoria:hover {
+    border-color: #B99555;
+}
+.destacados{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content:space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.equipamiento-img{
+    height: 30vh;
+    width: auto;  
+}
+.destacados-img{
+    height: 42vh;
+    width: auto;
+}
+
+/* Catálogo */
+.presentacion-catalogo{
+    margin-bottom: 50px;
+}
+.catalogo-img{
+    height: 30vh;
+    width: auto;
+}
+
+
+.bloque-catalogo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    align-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.tarjeta-producto{
+    background-color: #F1EEE7;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: auto;
+    width: 30vw;
+    border: 3px #CCC9A1 solid; 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjeta-producto:hover {
+    border-color: #B99555;
+}
+.caracteristicas{
+    color:#4C230A;
+    width: 25vw;
+    text-align: left;
+}
+/* Preguntas Frecuentes */
+.FAQ-img{
+    height: 35vh;
+    width: auto;
+}
+
+.accordion-icon {
+    width: 16px;
+    height: 16px;
+}
+.accordion{
+    margin-bottom: 30px;
+}
+.accordion-button {
+    background-color: #B99555;
+    color: #4C230A;
+}
+.accordion-header {
+    margin-top: 0;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #B99555;
+    color: #4C230A;
+}
+/* Contacto */
+.contacto-img{
+    height: 50vh;
+    width: auto;
+}
+.num-contacto{
+    color: #B99555;
+}
+label{
+    color: whitesmoke;
+}
+form{
+    margin-bottom: 40px;
+}
+/*Sobre Nosotros*/
+.sobreNos-img{
+    grid-area: imagen;
+    width: 50vw;
+    height: auto;
+}
+.texto-nosotros {
+    grid-area: texto;
+}
+.bloque-nosotros{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-areas: "imagen texto";
+    gap: 20px;
+    align-items: center;
+    margin: 30px 20px;
+}
+/* footer */
+footer{
+    background-color: #B99555;
+    display: flex;
+    flex-flow: column wrap;
+}
+footer nav ul li{
+    list-style: none;
+}
+.copyright p{
+    font-size: 1rem;
+}
+.RRSS-img{
+    height:4vh;
+    width: 2vw;
+}
+.footer-nav .nav-ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+/* flecha hacia arriba */
+.flechaArriba-img{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    height: 80px;
+    width: auto;
+}
+/* menu acompañante */
+.menu-sticky{
+    position: sticky;
+    top: 0;
+}
+
+/* celular */
+@media(max-width: 500px){
+    .destacados {
+        grid-template-columns: 1fr;
+    }  
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+        h3 {
+    font-size: 1.1rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .precio{
+        font-size: 1.1rem;
+    }
+    .prod-nombre{
+        font-size: 1.6rem;
+    }
+    header.menu-sticky {
+        gap: 10px;
+    }
+
+    .nav-ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .bloque-categoria,
+    .bloque-catalogo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tarjeta-categoria {
+        width: 85%;
+    }
+    
+
+    .destacados {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tarjeta-producto {
+        width: 80vw;
+        margin: 0 20px;
+        padding: 12px;
+    }
+    .caracteristicas {
+        width: 100%;
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    .equipamiento-img,
+    .destacados-img,
+    .catalogo-img {
+        width: 70vw;
+        height: auto;
+    }
+
+    .presentacion-img {
+        width: 85vw;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .texto-izquierda {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .FAQ-img, 
+    .contacto-img {
+        width: 70vw;
+        height: auto;
+    }
+
+    .bloque-nosotros {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "imagen"
+            "texto";
+        gap: 15px;
+        margin: 20px 12px;
+    }
+    .sobreNos-img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .RRSS-img {
+        width: 5.5vw;
+        height: auto;
+    }
+
+    .flechaArriba-img {
+        height: 45px;
+        width: auto;
+        bottom: 12px;
+        right: 5px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+/* tablet */
+@media(min-width: 501px) and (max-width: 1024px){
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    .nav-ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .bloque-categoria {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tarjeta-categoria {
+        width: 60vw;
+    }
+
+    .destacados,
+    .bloque-catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .tarjeta-producto {
+        width: 40vw;
+        margin: 0 10px;
+        padding: 12px;
+    }
+
+    .caracteristicas {
+        width: 100%;
+    }
+
+    .presentacion-img {
+        width: 60vw;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .equipamiento-img {
+        width: 30vw;
+        height: auto;
+    }
+
+    .destacados-img,
+    .catalogo-img {
+        width: 35vw;
+        height: auto;
+    }
+
+    .FAQ-img,
+    .contacto-img {
+        width: 60vw;
+        height: auto;
+    }
+
+    .bloque-nosotros {
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-areas: "imagen texto";
+        gap: 15px;
+        margin: 20px 12px;
+    }
+
+    .sobreNos-img {
+        width: 40vw;
+        height: auto;
+    }
+     .RRSS-img {
+        width: 6vw;
+        height: auto;
+    }
+}
